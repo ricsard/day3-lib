@@ -1,0 +1,19 @@
+<div>
+  <button (click)="behaviorSubscribe()">BehaviorSubject</button>
+  <button (click)="replaySubscribe()">ReplaySubject</button>
+</div>
+
+<div>
+  <input type="text" [formControl]="formControl1">
+  <input type="text" [formControl]="formControl2">
+</div>
+
+<div>
+  <input type="text" [(ngModel)]="inputValue">
+  <input type="button" value="add" (click)="addItem()">
+  <input type="button" value="modify" (click)="modify()">
+</div>
+
+<cdk-virtual-scroll-viewport class="container" itemSize="30">
+  <app-item *cdkVirtualFor="let item of list; let odd = odd" [item]="item" [isOdd]="odd"></app-item>
+</cdk-virtual-scroll-viewport>

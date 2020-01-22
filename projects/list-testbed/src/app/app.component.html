@@ -1,0 +1,7 @@
+<h1>{{ 'APP_NAME' | translate }}</h1>
+<button (click)="toggleLang()">Toggle Lang</button>
+<ngx-list-lib [items]="listItems">
+  <ng-template ngxListItemTpl let-item="item">
+    {{item.name}}: {{item.value}}
+  </ng-template>
+</ngx-list-lib>

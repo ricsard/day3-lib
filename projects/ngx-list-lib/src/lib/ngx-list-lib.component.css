@@ -1,0 +1,45 @@
+.ngx-list {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ngx-list .list-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.ngx-list .list-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.ngx-list .list-items .list-item {
+  display: flex;
+  flex-direction: row;
+
+  margin: 0.5rem;
+}
+
+.ngx-list .list-items .list-item:hover {
+  transform: translateX(0.5rem);
+  transition: transform 500ms ease;
+}
+
+.ngx-list .list-item .list-item-header {
+  flex: 0 0 7rem;
+
+  padding: 0.8rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+  background-color: #607D8B;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.ngx-list .list-item .list-item-content {
+  flex-grow: 1;
+  flex-shrink: 0;
+
+  padding: 0.8rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  background-color: #eee;
+}

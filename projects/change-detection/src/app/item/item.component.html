@@ -1,0 +1,8 @@
+<div [class.odd]="isOdd">
+  <img src="https://source.unsplash.com/random/30x30?cb={{item.id}}">
+  <input type="checkbox" [(ngModel)]="item.value">
+  <input type="checkbox" [(ngModel)]="item.value">
+  {{ item.title }}
+  <input *ngIf="isOdd" type="button" value="click me" (click)="click(item.id)">
+</div>
+

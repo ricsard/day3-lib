@@ -1,0 +1,14 @@
+<div class="ngx-list">
+  <div class="list-title">{{intl.listTitle}}</div>
+  <div @list class="list-items">
+    <div @listItem class="list-item" *ngFor="let item of items; let index = index">
+      <div class="list-item-header">
+        {{intl.listItemHeader(index)}}
+      </div>
+      <div class="list-item-content">
+        <span *ngIf="!itemTemplate; else itemTpl">{{ item }}</span>
+        <ng-template #itemTpl [ngTemplateOutlet]="itemTemplate" [ngTemplateOutletContext]="{ item: item }"> </ng-template>
+      </div>
+    </div>
+  </div>
+</div>

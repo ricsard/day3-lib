@@ -1,0 +1,5 @@
+{
+  "APP_NAME": "List TestBed app",
+  "LIST_TITLE": "Title",
+  "LIST_ITEM": "Item {{index}}."
+}
